@@ -1,0 +1,55 @@
+a - b = -(b - a)
+A = 1, B =   2;  0.0% failures
+A = 1, B = 100;  0.0% failures
+
+a / b = 1 / (b / a)
+A = 1, B =   2; 29.4% failures
+A = 1, B = 100; 26.2% failures
+
+(a * b ) ** 4 = (a ** 4) * (b ** 4)
+A = 1, B =   2; 72.0% failures
+A = 1, B = 100; 75.2% failures
+
+(a + b) ** 2 = (a ** 2) + (2 * a * b) + (b ** 2)
+A = 1, B =   2; 49.8% failures
+A = 1, B = 100; 50.6% failures
+
+(a + b) * (a - b) = (a ** 2) - (b ** 2)
+A = 1, B =   2; 69.8% failures
+A = 1, B = 100; 50.0% failures
+
+e ** (a + b) = (e ** a) * (e ** b)
+A = 1, B =   2; 52.0% failures
+A = 1, B = 100; 75.8% failures
+
+log(a ** b) = b * log(a)
+A = 1, B =   2; 54.8% failures
+A = 1, B = 100; 25.6% failures
+
+log(a * b) = log(a) + log(b)
+A = 1, B =   2; 45.4% failures
+A = 1, B = 100; 27.2% failures
+
+(a * b) = e ** (log(a) + log(b))
+A = 1, B =   2; 34.2% failures
+A = 1, B = 100; 88.4% failures
+
+1 / ((1 / a) + (1 / b)) = (a * b) / (a + b)
+A = 1, B =   2; 46.6% failures
+A = 1, B = 100; 46.4% failures
+
+a * ((sin(b)) ** 2 + (cos(b)) ** 2) = a
+A = 1, B =   2; 23.8% failures
+A = 1, B = 100; 22.4% failures
+
+sinh(a + b) = ((e ** a) * (e ** b) - (e ** (-a)) * (e ** (-b))) / 2
+A = 1, B =   2; 76.8% failures
+A = 1, B = 100; 98.4% failures
+
+tan(a + b) = (sin(a + b)) / (cos(a + b))
+A = 1, B =   2; 32.8% failures
+A = 1, B = 100; 35.0% failures
+
+sin(a + b) = sin(a) * cos(b) + sin(b) * cos(a)
+A = 1, B =   2; 66.8% failures
+A = 1, B = 100; 81.8% failures
